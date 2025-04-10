@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 
 const places = [
@@ -38,8 +38,8 @@ export default function Ourpresence() {
               <h1 className="text-xl md:text-5xl lg:text-5xl w-[25%] font-semibold absolute top-[37%] left-1/4 transform -translate-x-1/4">
                 Transforming CX one interaction at a time
               </h1>
-              <span className="absolute top-[60%] left-[19%] block w-20 h-1 bg-blue-600 mt-0"></span>
-              <p className="text-xs md:text-xs lg:text-sm  w-[25%] absolute top-[64%] left-[25%] transform -translate-x-1/4">
+              <span className="absolute top-[51%] left-[19%] block w-20 h-1 bg-blue-600 mt-0"></span>
+              <p className="text-xs md:text-xs lg:text-sm  w-[25%] absolute top-[53%] left-[25%] transform -translate-x-1/4">
                 We’re a next-gen contact center committed to delivering
                 personalized CX to our global clients with our diverse
                 workforce, and tech innovations at scale.
@@ -58,14 +58,16 @@ export default function Ourpresence() {
         </div>
 
         <div className="flex justify-center px-4">
-          <img
+          <Image
             src="/imgs/map.png"
             alt="World Map with Locations"
+            width={1000}
+            height={1000}
             className="max-w-full h-auto rounded-md shadow-md"
           />
         </div>
       </section>
-      <main className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <main className="min-h-screen bg-gray-100 flex items-center justify-center mb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {places.map((place, index) => (
             <div
@@ -76,8 +78,9 @@ export default function Ourpresence() {
                 <Image
                   src={place.src}
                   alt={place.name}
-                  fill
-                  className="object-cover"
+                  width={240} // tumhara container size ke hisab se
+                  height={240} // square bana diya maine
+                  className="object-cover w-full h-full" // yeh add kiya
                 />
               </div>
               <div className="text-center py-2">

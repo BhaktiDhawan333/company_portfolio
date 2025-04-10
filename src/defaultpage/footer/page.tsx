@@ -2,9 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Mail } from "lucide-react";
-import Image from "../../../../node_modules/next/image";
-import Link from "../../../../node_modules/next/link";
+import Image from "../../../node_modules/next/image";
+import Link from "../../../node_modules/next/link";
 
 export function Footer() {
   return (
@@ -20,7 +19,7 @@ export function Footer() {
               <p className="text-white/90 mb-8">
                 A forefront provider of outsourced digital services and 360°
                 Customer Experiences that are Real, Virtual & Scalable for the
-                world's most innovative companies
+                world&apos;s most innovative companies
               </p>
               <p className="text-white/90">Success Stories in a Go!</p>
             </div>

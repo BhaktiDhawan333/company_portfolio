@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,

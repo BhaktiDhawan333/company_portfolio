@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 
 const cities = [
@@ -29,7 +29,7 @@ export default function Blogs() {
               height={1000}
             />
             <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-start p-10 text-white ">
-              <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-1/3 left-1/4 transform -translate-x-1/4">
+              <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-[39%] left-[27%] transform -translate-x-1/4">
                 Career
               </h1>
               <p className="absolute top-1/2 left-1/3 transform -translate-x-1/4 pb-4 text-center">

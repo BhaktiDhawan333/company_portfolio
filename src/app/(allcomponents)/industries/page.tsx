@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 
 export default function Industries() {
@@ -22,7 +22,7 @@ export default function Industries() {
                 Driving Excellence Across <br /> Diverse Sectors
                 <span className="absolute top-2/2 left-[1%] block w-20 h-1 bg-blue-600 mt-4"></span>
               </h1>
-              <button className="border-2 border-blue-600 rounded-lg bg-blue-600 text-white text-xs p-2 absolute top-[67%] left-[28%]">
+              <button className="border-2 border-blue-600 rounded-lg bg-blue-600 text-white text-xs p-2 absolute top-[64%] left-[29%]">
                 Our Services
               </button>
             </div>
@@ -38,12 +38,7 @@ export default function Industries() {
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/logistics-icon.png"
-                alt="Logistics"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Logistics" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">Logistics</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">
@@ -61,12 +56,7 @@ export default function Industries() {
           {/* Card 2 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/fintech-icon.png"
-                alt="Fintech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Fintech" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">Fintech</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">
@@ -84,7 +74,7 @@ export default function Industries() {
           {/* Card 3 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image src="/saas-icon.png" alt="SaaS" width={50} height={50} />
+              <Image src="" alt="SaaS" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">SaaS</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">
@@ -101,12 +91,7 @@ export default function Industries() {
           {/* Card 4 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/healthcare-icon.png"
-                alt="Health Care"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Health Care" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">Health Care</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">
@@ -123,12 +108,7 @@ export default function Industries() {
           {/* Card 5 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/edtech-icon.png"
-                alt="Edtech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Edtech" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">Edtech</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">
@@ -145,12 +125,7 @@ export default function Industries() {
           {/* Card 6 */}
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/retail-icon.png"
-                alt="Retail"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Retail" width={50} height={50} />
             </div>
             <h2 className="text-xl font-bold mb-2 mr-auto">Retail</h2>
             <p className="text-gray-600 mb-4 mr-auto text-justify">

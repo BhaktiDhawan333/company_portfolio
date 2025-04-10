@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 import {
   Accordion,
@@ -29,11 +29,11 @@ export default function Justtawk() {
                 Your 24/7 Call Center Solutions
                 <span className="absolute top-2/2 left-[1%] block w-20 h-1 bg-blue-600 mt-4"></span>
               </h1>
-              <p className="text-sm md:text-md lg:text-sm absolute top-[42%] left-[35%] transform -translate-x-1/4">
+              <p className="text-sm md:text-md lg:text-sm absolute top-[40%] left-[35%] transform -translate-x-1/4">
                 Empowering Micro and Small-Scale Industries with
                 Subscription-Based Contact Center Solutions.
               </p>
-              <button className="bg-blue-500 p-2 rounded-xl absolute top-[48%] left-[25%]">
+              <button className="bg-blue-500 p-2 rounded-xl absolute top-[45%] left-[27%]">
                 Get Started Today
               </button>
             </div>
@@ -49,18 +49,20 @@ export default function Justtawk() {
             </h1>
             <p className="text-base md:text-xs text-gray-600">
               Empower your business with seamless customer communication through
-              Justtawk's comprehensive contact center solutions. Whether you're
-              a small startup or a thriving enterprise, Justtawk ensures your
-              customers are always heard, offering cost-effective plans starting
-              at just ₹8999 per month.
+              Justtawk&apos;s comprehensive contact center solutions. Whether
+              you&apos;re a small startup or a thriving enterprise, Justtawk
+              ensures your customers are always heard, offering cost-effective
+              plans starting at just ₹8999 per month.
             </p>
           </div>
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img3.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -70,9 +72,11 @@ export default function Justtawk() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img66.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-[300px] rounded-lg shadow-lg"
             />
           </div>
@@ -175,9 +179,11 @@ export default function Justtawk() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-2 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img55.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-[300px] rounded-lg shadow-lg"
             />
           </div>
@@ -227,9 +233,9 @@ export default function Justtawk() {
             Get Started Today
           </h2>
           <p className="text-white text-base md:text-xs mb-6 max-w-lg">
-            Transform your customer interactions with Justtawk's agile contact
-            center solutions. Enhance customer satisfaction and streamline
-            operations effortlessly.
+            Transform your customer interactions with Justtawk&apos;s agile
+            contact center solutions. Enhance customer satisfaction and
+            streamline operations effortlessly.
           </p>
           <button className="bg-white text-indigo-600 text-xs py-3 px-6 rounded-xl w-fit hover:bg-gray-100 transition">
             Set Up Your Contact Center

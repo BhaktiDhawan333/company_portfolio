@@ -1,13 +1,7 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import {
   ArrowRight,
   Headphones,
@@ -15,7 +9,6 @@ import {
   Building2,
   CircuitBoard,
   MessageSquare,
-  Check,
 } from "lucide-react";
 
 export default function Ourservices() {
@@ -66,9 +59,11 @@ export default function Ourservices() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img3.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto md:h-96 rounded-lg shadow-lg"
             />
           </div>
@@ -95,7 +90,7 @@ export default function Ourservices() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Enhance your customer satisfaction and streamline operations
-                  with Technotask's expert contact center services.
+                  with Technotask&apos;s expert contact center services.
                 </p>
                 <button className="flex items-center text-orange-500 hover:text-orange-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -113,8 +108,8 @@ export default function Ourservices() {
                   Customer Lifecycle Management Advisory
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Incorporate more than a century's worth of experience in your
-                  business with our CLM Advisory.
+                  Incorporate more than a century&apos;s worth of experience in
+                  your business with our CLM Advisory.
                 </p>
                 <button className="flex items-center text-blue-500 hover:text-blue-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -154,7 +149,7 @@ export default function Ourservices() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Reduce your Cost-to-serve by up to 25% by deploying
-                  Technotask's Gen-AI-powered solutions.
+                  Technotask&apos;s Gen-AI-powered solutions.
                 </p>
                 <button className="flex items-center text-purple-500 hover:text-purple-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />

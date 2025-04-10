@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { Footer } from "../footer/page";
+import React, { useState } from "react";
+import { Footer } from "../../../defaultpage/footer/page";
 import Image from "../../../../node_modules/next/image";
 import slide1 from "../../../../public/imgs/img6.png";
 import slide2 from "../../../../public/imgs/img2.png";
@@ -13,7 +13,6 @@ import {
   CircuitBoard,
   MessageSquare,
 } from "lucide-react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Navbar from "../navbar/page";
 
 const images = [
@@ -25,21 +24,6 @@ const images = [
   "/imgs/iso6.png",
   "/imgs/iso7.png",
   "/imgs/iso1.png",
-];
-
-const testimonials = [
-  {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
 ];
 
 const slides = [
@@ -65,23 +49,21 @@ const slides = [
 
 export default function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [hoverIndex, setHoverIndex] = useState(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY === 0) {
+  //       setShowNavbar(true);
+  //     } else {
+  //       setShowNavbar(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -220,7 +202,7 @@ export default function Homepage() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Enhance your customer satisfaction and streamline operations
-                  with Technotask's expert contact center services.
+                  with Technotask&apos;s expert contact center services.
                 </p>
                 <button className="flex items-center text-orange-500 hover:text-orange-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -238,8 +220,8 @@ export default function Homepage() {
                   Customer Lifecycle Management Advisory
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Incorporate more than a century's worth of experience in your
-                  business with our CLM Advisory.
+                  Incorporate more than a century&apos;s worth of experience in
+                  your business with our CLM Advisory.
                 </p>
                 <button className="flex items-center text-blue-500 hover:text-blue-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -279,7 +261,7 @@ export default function Homepage() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Reduce your Cost-to-serve by up to 25% by deploying
-                  Technotask's Gen-AI-powered solutions.
+                  Technotask&apos;s Gen-AI-powered solutions.
                 </p>
                 <button className="flex items-center text-purple-500 hover:text-purple-600 font-medium">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -397,8 +379,9 @@ export default function Homepage() {
                   We embrace a vibrant mix of cultures, backgrounds, and
                   geographies, fostering an open-door policy for direct
                   communication with upper management. Our workforce, with 50%
-                  women, exemplifies our dedication towards women's empowerment.
-                  This diversity enriches our culture and fuels innovation.
+                  women, exemplifies our dedication towards women&apos;s
+                  empowerment. This diversity enriches our culture and fuels
+                  innovation.
                 </p>
 
                 {/* Button */}

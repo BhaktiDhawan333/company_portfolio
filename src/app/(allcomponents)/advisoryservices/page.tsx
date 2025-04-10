@@ -1,13 +1,7 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Check } from "lucide-react";
 
 export default function Advisoryservices() {
@@ -31,8 +25,8 @@ export default function Advisoryservices() {
                 your Customer <br />
                 Experience.
               </h1>
-              <span className="absolute top-[65%] left-[19%] block w-20 h-1 bg-blue-600 mt-0"></span>
-              <p className="text-xs md:text-xs lg:text-sm absolute top-[68%] left-[25%] transform -translate-x-1/4">
+              <span className="absolute top-[60%] left-[20%] block w-20 h-1 bg-blue-600 mt-0"></span>
+              <p className="text-xs md:text-xs lg:text-sm absolute top-[62%] left-[25%] transform -translate-x-1/4">
                 Transform your contact center with our integrated Customer{" "}
                 <br />
                 Lifecycle Management Advisory.
@@ -50,16 +44,18 @@ export default function Advisoryservices() {
             </h1>
             <p className="text-base md:text-xs text-gray-600">
               Transform your customer interactions into enduring relationships
-              with Technotask's comprehensive Customer Lifecycle Management
+              with Technotask&apos;s comprehensive Customer Lifecycle Management
               services.
             </p>
           </div>
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img6.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -70,9 +66,11 @@ export default function Advisoryservices() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -112,9 +110,11 @@ export default function Advisoryservices() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img3.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -124,9 +124,11 @@ export default function Advisoryservices() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -165,9 +167,11 @@ export default function Advisoryservices() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img6.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -177,9 +181,11 @@ export default function Advisoryservices() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -238,9 +244,11 @@ export default function Advisoryservices() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img66.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-[300px] rounded-lg shadow-lg"
             />
           </div>

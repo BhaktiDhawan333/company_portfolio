@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 import {
   Accordion,
@@ -8,32 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Check } from "lucide-react";
-const blogs = [
-  {
-    img: "/imgs/iso1.png",
-    title: "Empowering Growth: The Inspiring Journey of mPokket and Technotask",
-  },
-  {
-    img: "/imgs/iso2.png",
-    title: "Why Outsource Your Customer Experience?",
-  },
-  {
-    img: "/imgs/iso5.png",
-    title:
-      "Why E-Commerce Players Should Outsource Customer Acquisition and Customer Experience Support to an Omni-Channel BPO",
-  },
-  {
-    img: "/imgs/iso6.png",
-    title:
-      "How AI/ML powered Automation Tools Elevate the Omni-Channel Experience",
-  },
-  {
-    img: "/imgs/iso5.png",
-    title:
-      "Enhancing Customer Experience in the Digital Era: Key Strategies for Seamless Interactions",
-  },
-];
 
 export default function Aiproducts() {
   return (
@@ -54,7 +28,7 @@ export default function Aiproducts() {
               <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-[37%] left-1/4 transform -translate-x-1/4">
                 Gen-AI Products
               </h1>
-              <span className="absolute top-[48%] left-[20%] block w-20 h-1 bg-blue-600"></span>
+              <span className="absolute top-[46%] left-[21%] block w-20 h-1 bg-blue-600"></span>
             </div>
           </div>
         </div>
@@ -76,9 +50,11 @@ export default function Aiproducts() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img6.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -89,9 +65,11 @@ export default function Aiproducts() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -123,16 +101,11 @@ export default function Aiproducts() {
           impactful projects
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl w-[60%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  max-w-screen-md w-[60%]">
           {/* Card 1 */}
           <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/logistics-icon.png"
-                alt="Logistics"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Logistics" width={50} height={50} />
             </div>
             <h2 className="text-md font-semibold mb-2 mr-auto">
               Speech Analytics Tool
@@ -148,12 +121,7 @@ export default function Aiproducts() {
           {/* Card 2 */}
           <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/fintech-icon.png"
-                alt="Fintech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Fintech" width={50} height={50} />
             </div>
             <h2 className="text-md font-semibold mb-2 mr-auto flex text-left">
               AI Avatars
@@ -170,12 +138,7 @@ export default function Aiproducts() {
           {/* Card 1 */}
           <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/logistics-icon.png"
-                alt="Logistics"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Logistics" width={50} height={50} />
             </div>
             <h2 className="text-md font-semibold mb-2 mr-auto text-left">
               AI Voicebots & Chatbots
@@ -190,12 +153,7 @@ export default function Aiproducts() {
           {/* Card 2 */}
           <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/fintech-icon.png"
-                alt="Fintech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Fintech" width={50} height={50} />
             </div>
             <h2 className="text-md font-semibold mb-2 mr-auto flex text-left">
               Advanced Omnichannel Analytics
@@ -290,7 +248,7 @@ export default function Aiproducts() {
         </div>
       </div>
 
-      <div className="relative left-[25%] mt-5 w-full max-w-screen-md">
+      <div className="relative left-[30%] mt-5 w-full max-w-screen-md">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">
           Testimonial
         </h2>

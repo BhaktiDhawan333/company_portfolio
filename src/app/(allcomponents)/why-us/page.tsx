@@ -1,15 +1,9 @@
 "use client";
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 // import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -136,8 +130,8 @@ export default function Whyus() {
               <h1 className="text-xl md:text-5xl lg:text-5xl w-[25%] font-semibold absolute top-[37%] left-1/4 transform -translate-x-1/4">
                 Transforming CX one interaction at a time
               </h1>
-              <span className="absolute top-[60%] left-[19%] block w-20 h-1 bg-blue-600 mt-0"></span>
-              <p className="text-xs md:text-xs lg:text-sm  w-[25%] absolute top-[64%] left-[25%] transform -translate-x-1/4">
+              <span className="absolute top-[51%] left-[19%] block w-20 h-1 bg-blue-600 mt-0"></span>
+              <p className="text-xs md:text-xs lg:text-sm  w-[25%] absolute top-[53%] left-[25%] transform -translate-x-1/4">
                 We’re a next-gen contact center committed to delivering
                 personalized CX to our global clients with our diverse
                 workforce, and tech innovations at scale.
@@ -170,9 +164,11 @@ export default function Whyus() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img6.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -183,9 +179,11 @@ export default function Whyus() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png"
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -241,9 +239,11 @@ export default function Whyus() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img3.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 rounded-lg shadow-lg"
             />
           </div>
@@ -253,9 +253,11 @@ export default function Whyus() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 rounded-lg shadow-lg"
             />
           </div>
@@ -294,9 +296,11 @@ export default function Whyus() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img6.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 rounded-lg shadow-lg"
             />
           </div>
@@ -306,9 +310,11 @@ export default function Whyus() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img2.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 rounded-lg shadow-lg"
             />
           </div>
@@ -367,9 +373,11 @@ export default function Whyus() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img66.png" // public folder me image place karna
               alt="Sample Image"
+              width={200}
+              height={200}
               className="w-full h-auto md:h-92 rounded-lg shadow-lg"
             />
           </div>
@@ -567,9 +575,11 @@ export default function Whyus() {
 
                 {/* Image */}
                 <div className="flex-1">
-                  <img
+                  <Image
                     src="/imgs/img6.png" // public folder me image place karna
                     alt="Puzzle"
+                    width={200}
+                    height={200}
                     className="w-full h-auto md:h-80 object-cover rounded-lg shadow-lg"
                   />
                 </div>
@@ -579,8 +589,8 @@ export default function Whyus() {
               <div className="bg-green-100 rounded-2xl p-4">
                 <h4 className="font-bold mb-2 text-md">Impact:</h4>
                 <p className="text-xs">
-                  Technotask successfully increased the client's customer base
-                  and achieved a significant 35% reduction in fraud cases,
+                  Technotask successfully increased the client&apos;s customer
+                  base and achieved a significant 35% reduction in fraud cases,
                   demonstrating effective risk mitigation and growth strategies.
                 </p>
               </div>
@@ -652,9 +662,11 @@ export default function Whyus() {
 
                 {/* Image */}
                 <div className="flex-1">
-                  <img
+                  <Image
                     src="/imgs/img6.png" // public folder me image place karna
                     alt="Puzzle"
+                    width={200}
+                    height={200}
                     className="w-full h-auto md:h-80 object-cover rounded-lg shadow-lg"
                   />
                 </div>
@@ -664,8 +676,8 @@ export default function Whyus() {
               <div className="bg-green-100 rounded-2xl p-4">
                 <h4 className="font-bold mb-2 text-md">Impact:</h4>
                 <p className="text-xs">
-                  Technotask successfully increased the client's customer base
-                  and achieved a significant 35% reduction in fraud cases,
+                  Technotask successfully increased the client&apos;s customer
+                  base and achieved a significant 35% reduction in fraud cases,
                   demonstrating effective risk mitigation and growth strategies.
                 </p>
               </div>

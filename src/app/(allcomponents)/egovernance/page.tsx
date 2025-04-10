@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import { Footer } from "../footer/page";
+import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 import {
   Accordion,
@@ -8,7 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Check } from "lucide-react";
 
 export default function Egovernance() {
   return (
@@ -29,7 +28,7 @@ export default function Egovernance() {
                 Transform E- <br /> Governance with <br /> Technotask
                 <span className="absolute top-2/2 left-[1%] block w-20 h-1 bg-blue-600 mt-4"></span>
               </h1>
-              <p className="text-sm md:text-sm lg:text-xs absolute top-[52%] left-[36%] transform -translate-x-1/4">
+              <p className="text-sm md:text-sm lg:text-xs absolute top-[48%] left-[35%] transform -translate-x-1/4">
                 Assisting Goverment to establish a better citizen satisfaction
                 ratio by <br /> bridging the gap of communication.
               </p>
@@ -39,7 +38,7 @@ export default function Egovernance() {
       </div>
 
       <div className="flex items-center justify-center my-15 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-lg">
           {/* Left Side Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-2xl md:text-4xl font-semibold mb-4">
@@ -58,9 +57,11 @@ export default function Egovernance() {
 
           {/* Right Side Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img5.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -76,16 +77,11 @@ export default function Egovernance() {
           impactful projects
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl w-[60%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-[60%]">
           {/* Card 1 */}
-          <div className="bg-gray-200 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/logistics-icon.png"
-                alt="Logistics"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Logistics" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-2 mr-auto">
               State Electricity Board
@@ -97,14 +93,9 @@ export default function Egovernance() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gray-200 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/fintech-icon.png"
-                alt="Fintech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Fintech" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-2 mr-auto flex text-left">
               Ministry of Urban Development
@@ -115,9 +106,9 @@ export default function Egovernance() {
             </p>
           </div>
           {/* Card 3 */}
-          <div className="bg-gray-200 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image src="/saas-icon.png" alt="SaaS" width={50} height={50} />
+              <Image src="" alt="SaaS" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-2 mr-auto">
               District Helplines
@@ -129,14 +120,9 @@ export default function Egovernance() {
           </div>
 
           {/* Card 1 */}
-          <div className="bg-gray-200 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/logistics-icon.png"
-                alt="Logistics"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Logistics" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-2 mr-auto text-left">
               Citizen Grievance Redressal
@@ -148,14 +134,9 @@ export default function Egovernance() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gray-200 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <div className="mb-4 mr-auto">
-              <Image
-                src="/fintech-icon.png"
-                alt="Fintech"
-                width={50}
-                height={50}
-              />
+              <Image src="" alt="Fintech" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-2 mr-auto flex text-left">
               COVID Helpline
@@ -170,7 +151,7 @@ export default function Egovernance() {
       </div>
 
       <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-stretch max-w-6xl w-full gap-10 max-w-screen-md">
+        <div className="flex flex-col md:flex-row items-stretch max-w-6xl w-full gap-10 max-w-screen-lg">
           {/* Left Side Content */}
           <div className="flex-1 h-full flex flex-col justify-center">
             <h1 className="text-4xl font-bold mb-4">
@@ -230,12 +211,14 @@ export default function Egovernance() {
       </div>
 
       <div className="flex items-center justify-center my-15 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-lg">
           {/* Left Side Content */}
           <div className="flex-1">
-            <img
+            <Image
               src="/imgs/img5.png" // public folder me image place karna
               alt="Sample Image"
+              width={240}
+              height={240}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -247,7 +230,7 @@ export default function Egovernance() {
             </h1>
             <p className="text-base md:text-xs text-gray-400">
               Join hands with Technotask to embark on a transformative journey
-              in E-Governance. Whether you're looking to enhance service
+              in E-Governance. Whether you&apos;re looking to enhance service
               delivery, streamline operations, or improve citizen engagement, we
               have the expertise and dedication to make it happen.
             </p>
