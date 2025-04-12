@@ -13,52 +13,73 @@ const images = [
   { image: "/imgs/iso7.png", title: "Nasscom" },
   { image: "/imgs/iso1.png", title: "12344" },
 ];
+const certifications = [
+  {
+    title: "ISO 9001:2015",
+    image:
+      "https://images.unsplash.com/photo-1589330694653-ded6df03f754?ixlib=rb-1.2.1",
+  },
+  {
+    title: "ISO 27001",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1",
+  },
+  {
+    title: "GDPR Compliant",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1",
+  },
+  {
+    title: "PCI DSS",
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1",
+  },
+];
 
 export default function Certifications() {
   return (
     <div>
       <Navbar />
-      {/* ....first div */}
-      <div className="relative w-full">
-        <div className="flex transition-transform duration-700 ease-in-out">
-          <div className="w-full flex-shrink-0 relative">
-            <Image
-              src="/imgs/ofc.png"
-              className="w-full object-cover h-[50vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh]"
-              alt=""
-              width={2000}
-              height={1000}
+      <div className="w-full">
+        {/* Hero Section */}
+        <div className="relative w-full">
+          <div className="w-full relative">
+            <img
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1"
+              className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
+              alt="Certifications"
             />
-            <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-start p-10 text-white">
-              <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-1/3 left-[29%] transform -translate-x-1/4 pb-4">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
                 Certifications
               </h1>
-              <span className="absolute top-[48%] left-[25%] block w-19 h-1 bg-blue-600"></span>
+              <span className="block w-20 h-1 bg-blue-600 lg:absolute lg:top-[58%] left-[39%]"></span>
+            </div>
+          </div>
+        </div>
+
+        {/* Certifications Grid */}
+        <div className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {certifications.map((cert, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="relative w-full aspect-square mb-4">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full h-full object-cover rounded-xl shadow-lg"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-center">
+                    {cert.title}
+                  </h3>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center my-10 px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-screen-md w-full">
-          {images.map((data, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="relative w-full h-40">
-                <Image
-                  src={data.image}
-                  alt={`Image ${index + 1}`}
-                  fill
-                  className="object-cover rounded-xl p-2"
-                />
-              </div>
-              <p className="mt-4 text-center text-md font-medium">
-                {data.title}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <Footer />
     </div>
   );

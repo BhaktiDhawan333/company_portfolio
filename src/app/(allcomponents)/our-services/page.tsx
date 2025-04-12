@@ -20,28 +20,29 @@ export default function Ourservices() {
           <div className="w-full flex-shrink-0 relative">
             <Image
               src="/imgs/img66.png"
-              className="w-full object-cover h-[80vh] sm:h-[40vh] md:h-[45vh] lg:h-[90vh]"
+              className="w-full object-cover h-[70vh] sm:h-[40vh] md:h-[50vh] lg:h-[90vh]"
               alt=""
               width={2000}
               height={1000}
             />
-            <div className="flex flex-col justify-center items-center p-10 text-white ">
-              <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-[30%] left-1/3 w-[30%] transform -translate-x-1/4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 sm:p-6 md:p-8 text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl font-bold mb-4 md:max-w-lg max-w-screen-md text-left lg:absolute lg:top-[42%] lg:left-[36%] sm:my-2">
                 Shaping CX through AI and Human Synergy
-                <span className="absolute top-[83%] left-[1%] block w-20 h-1 bg-blue-600 my-8"></span>
               </h1>
-              <p className="text-sm md:text-md lg:text-sm absolute top-[45%] left-[32%] w-[24%] transform -translate-x-1/4">
+              <span className="block w-16 sm:w-20 h-1 bg-blue-600 mb-6 sm:absolute sm:top-[47%] sm:left-[17%] lg:absolute lg:top-[52%] lg:left-[36%] sm:my-8"></span>
+              <p className="text-sm sm:text-base md:text-lg lg:text-sm text-justify lg:absolute lg:top-[54%] lg:left-[36%]  sm:my-8 max-w-md md:max-w-lg">
                 Let us take your business to the next level with more than 100
                 years of cumulative industry experience, cutting-edge tech, and
                 personalized CX.
               </p>
-              <button className="bg-blue-500 p-2 rounded-xl absolute top-[52%] left-[26%]">
+              <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 sm:top-[69%] sm:left-[17%]  rounded-xl text-sm sm:text-base lg:absolute lg:top-[67%] lg:left-[36%]">
                 Get Started Today
               </button>
             </div>
           </div>
         </div>
       </div>
+
       <div className="flex items-center justify-center my-2 px-10 md:px-20">
         <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
           {/* Left Side Content */}

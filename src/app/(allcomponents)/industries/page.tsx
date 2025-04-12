@@ -2,141 +2,138 @@ import React from "react";
 import Image from "../../../../node_modules/next/image";
 import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
+import {
+  Truck,
+  Landmark,
+  Monitor,
+  Heart,
+  BookOpen,
+  ShoppingBag,
+} from "lucide-react";
+
+const industries = [
+  {
+    icon: <Truck className="w-8 h-8 text-blue-600" />,
+    title: "Logistics",
+    description:
+      "We offer robust solutions to optimize your supply chain, manage customer inquiries, and improve operational efficiency.",
+    features: [
+      "Supply Chain",
+      "Delivery Management",
+      "IT Support",
+      "Real-Time Tracking",
+    ],
+  },
+  {
+    icon: <Landmark className="w-8 h-8 text-blue-600" />,
+    title: "Fintech",
+    description:
+      "Seamless financial operations, enhanced security, and outstanding customer service for the competitive industry.",
+    features: [
+      "KYC",
+      "Customer Acquisition",
+      "Premium to Premium",
+      "Relationship Management",
+    ],
+  },
+  {
+    icon: <Monitor className="w-8 h-8 text-blue-600" />,
+    title: "SaaS",
+    description:
+      "Comprehensive support to enhance customer experience and drive growth for your SaaS offerings.",
+    features: [
+      "User Onboarding",
+      "Customer Experience",
+      "Subscription Management",
+    ],
+  },
+  {
+    icon: <Heart className="w-8 h-8 text-blue-600" />,
+    title: "Health Care",
+    description:
+      "Enhance patient engagement, streamline administrative processes, and ensure compliance with healthcare regulations.",
+    features: ["Customized system", "Intelligent RPA", "Patient Solutions"],
+  },
+  {
+    icon: <BookOpen className="w-8 h-8 text-blue-600" />,
+    title: "Edtech",
+    description:
+      "Support educational institutions with technology solutions that enhance learning and improve student feedback.",
+    features: ["Lead Generation", "Student Support", "Data Management"],
+  },
+  {
+    icon: <ShoppingBag className="w-8 h-8 text-blue-600" />,
+    title: "Retail",
+    description:
+      "Manage customer interactions, optimize inventory, and deliver a great shopping experience with our solutions.",
+    features: [
+      "Inventory Optimization",
+      "Customer Insights",
+      "Retail Solutions",
+    ],
+  },
+];
 
 export default function Industries() {
   return (
     <div>
       <Navbar />
-      <div className="relative w-full">
-        <div className="flex transition-transform duration-700 ease-in-out">
-          <div className="w-full flex-shrink-0 relative">
-            <Image
-              src="/imgs/img66.png"
-              className="w-full object-cover h-[80vh] sm:h-[40vh] md:h-[45vh] lg:h-[90vh]"
-              alt=""
-              width={2000}
-              height={1000}
-            />
-            <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-start p-10 text-white ">
-              <h1 className="text-xl md:text-5xl lg:text-3xl font-semibold absolute top-1/2 left-1/3 transform -translate-x-1/4">
-                Driving Excellence Across <br /> Diverse Sectors
-                <span className="absolute top-2/2 left-[1%] block w-20 h-1 bg-blue-600 mt-4"></span>
-              </h1>
-              <button className="border-2 border-blue-600 rounded-lg bg-blue-600 text-white text-xs p-2 absolute top-[64%] left-[29%]">
-                Our Services
-              </button>
+      <div className="w-full">
+        {/* Hero Section */}
+        <div className="relative w-full">
+          <div className="flex">
+            <div className="w-full flex-shrink-0 relative">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1"
+                className="w-full object-cover h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]"
+                alt="Business sectors"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 sm:p-6 md:p-10">
+                <div className="max-w-4xl mx-auto text-center">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
+                    Driving Excellence Across Diverse Sectors
+                  </h1>
+                  <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    Our Services
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="min-h-screen bg-gray-100 flex flex-col items-center px-6 py-12">
-        <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Engage, Enhance, Thrive with <br /> Technotask
-        </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl w-[60%]">
-          {/* Card 1 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="Logistics" width={50} height={50} />
-            </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">Logistics</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              We offer robust solutions to optimize your supply chain, manage
-              customer inquiries, and improve operational efficiency.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>Supply Chain</li>
-              <li>Delivery Management</li>
-              <li>IT Support</li>
-              <li>Real-Time Tracking</li>
-            </ul>
-          </div>
+        {/* Industries Grid */}
+        <div className="bg-gray-100 py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-4">
+              Engage, Enhance, Thrive with Technotask
+            </h2>
 
-          {/* Card 2 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="Fintech" width={50} height={50} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto">
+              {industries.map((industry, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="mb-4">{industry.icon}</div>
+                  <h3 className="text-xl font-bold mb-3">{industry.title}</h3>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    {industry.description}
+                  </p>
+                  <ul className="space-y-2">
+                    {industry.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center text-sm text-gray-700"
+                      >
+                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">Fintech</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              Seamless financial operations, enhanced security, and outstanding
-              customer service for the competitive industry.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>KYC</li>
-              <li>Customer Acquisition</li>
-              <li>Premium to Premium</li>
-              <li>Relationship Management</li>
-            </ul>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="SaaS" width={50} height={50} />
-            </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">SaaS</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              Comprehensive support to enhance customer experience and drive
-              growth for your SaaS offerings.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>User Onboarding</li>
-              <li>Customer Experience</li>
-              <li>Subscription Management</li>
-            </ul>
-          </div>
-
-          {/* Card 4 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="Health Care" width={50} height={50} />
-            </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">Health Care</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              Enhance patient engagement, streamline administrative processes,
-              and ensure compliance with healthcare regulations.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>Customized system</li>
-              <li>Intelligent RPA</li>
-              <li>Patient Solutions</li>
-            </ul>
-          </div>
-
-          {/* Card 5 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="Edtech" width={50} height={50} />
-            </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">Edtech</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              Support educational institutions with technology solutions that
-              enhance learning and improve student feedback.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>Lead Generation</li>
-              <li>Student Support</li>
-              <li>Data Management</li>
-            </ul>
-          </div>
-
-          {/* Card 6 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
-            <div className="mb-4 mr-auto">
-              <Image src="" alt="Retail" width={50} height={50} />
-            </div>
-            <h2 className="text-xl font-bold mb-2 mr-auto">Retail</h2>
-            <p className="text-gray-600 mb-4 mr-auto text-justify">
-              Manage customer interactions, optimize inventory, and deliver a
-              great shopping experience with our solutions.
-            </p>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-1 mr-auto">
-              <li>Inventory Optimization</li>
-              <li>Customer Insights</li>
-              <li>Retail Solutions</li>
-            </ul>
           </div>
         </div>
       </div>

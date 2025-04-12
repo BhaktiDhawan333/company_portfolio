@@ -8,6 +8,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { Menu, X, Search } from "lucide-react";
 
 const aboutuspaths: { title: string; href: string }[] = [
   {
@@ -57,108 +58,234 @@ const solutionspaths: { title: string; href: string }[] = [
 
 export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    // Close search when opening mobile menu
+    if (!mobileMenuOpen) setSearchOpen(false);
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+    // Close mobile menu when opening search on mobile
+    if (!searchOpen && mobileMenuOpen) setMobileMenuOpen(false);
+  };
+
   return (
-    <div>
-      <nav className="bg-white p-4 border-b-1 border-gray-300">
+    <div className="sticky top-0 z-50">
+      <nav className="bg-white p-4 border-b border-gray-300 shadow-sm">
         <div className="container mx-auto flex items-center justify-between">
-          {/* Logo - Left Side */}
-          <div className="text-blue-600 font-bold text-3xl">
-            <a href="#">Logo</a>
+          {/* Logo */}
+          <div className="text-blue-600 font-bold text-2xl md:text-3xl">
+            <a href="/" className="flex items-center">
+              Logo
+            </a>
           </div>
 
-          <NavigationMenu>
-            <NavigationMenuList>
-              {/* Center Tabs with Dropdown for About Us and Career */}
-              <div className="flex space-x-8 text-black">
+          {/* Mobile Menu Button */}
+          <div className="flex items-center md:hidden">
+            {searchOpen ? (
+              <div className="relative mr-2">
+                <input
+                  type="text"
+                  className="w-full h-8 border rounded-lg px-2 pr-8"
+                  placeholder="Search..."
+                  autoFocus
+                />
+                <button
+                  onClick={toggleSearch}
+                  className="absolute right-2 top-1/2 -translate-y-1/2"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            ) : (
+              <button onClick={toggleSearch} className="mr-4">
+                <Search size={20} />
+              </button>
+            )}
+            <button onClick={toggleMobileMenu} className="text-gray-800">
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:block">
+            <NavigationMenu>
+              <NavigationMenuList className="flex space-x-2 lg:space-x-6">
                 <NavigationMenuItem>
-                  <NavigationMenuLink href="/Homepage">Home</NavigationMenuLink>
+                  <NavigationMenuLink href="/Homepage" className="px-2 py-1.5">
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/* Career Dropdown */}
-                <NavigationMenu>
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger>About us</NavigationMenuTrigger>
-                      <NavigationMenuContent className="bg-white">
-                        <ul className="grid w-[400px] md:w-[500px] lg:w-[160px] p-2 text-sm bg-white">
-                          {aboutuspaths.map((component) => (
-                            <NavigationMenuLink
-                              key={component.title}
-                              title={component.title}
-                              href={component.href}
-                            >
-                              {component.title}
-                            </NavigationMenuLink>
-                          ))}
-                        </ul>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
-
-                <NavigationMenu>
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
-                      <NavigationMenuContent className="bg-white">
-                        <ul className="grid w-[400px] gap-3 md:w-[500px] lg:w-[200px] p-2 text-sm bg-white">
-                          {solutionspaths.map((component) => (
-                            <NavigationMenuLink
-                              key={component.title}
-                              title={component.title}
-                              href={component.href}
-                            >
-                              {component.title}
-                            </NavigationMenuLink>
-                          ))}
-                        </ul>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="px-2 py-1.5">
+                    About us
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="bg-white">
+                    <ul className="grid w-[200px] p-2 text-sm bg-white">
+                      {aboutuspaths.map((component) => (
+                        <NavigationMenuLink
+                          key={component.title}
+                          href={component.href}
+                          className="block px-3 py-2 hover:bg-gray-100 rounded"
+                        >
+                          {component.title}
+                        </NavigationMenuLink>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink href="industries">
+                  <NavigationMenuTrigger className="px-2 py-1.5">
+                    Solutions
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="bg-white">
+                    <ul className="grid w-[220px] p-2 text-sm bg-white">
+                      {solutionspaths.map((component) => (
+                        <NavigationMenuLink
+                          key={component.title}
+                          href={component.href}
+                          className="block px-3 py-2 hover:bg-gray-100 rounded"
+                        >
+                          {component.title}
+                        </NavigationMenuLink>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    href="/industries"
+                    className="px-2 py-1.5"
+                  >
                     Industries
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink href="career">Career</NavigationMenuLink>
+                  <NavigationMenuLink href="/career" className="px-2 py-1.5">
+                    Career
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink href="/blogs">Blog</NavigationMenuLink>
+                  <NavigationMenuLink href="/blogs" className="px-2 py-1.5">
+                    Blog
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
-              </div>
-            </NavigationMenuList>
-          </NavigationMenu>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
 
-          <div className="flex items-center space-x-4">
+          {/* Desktop CTA and Search */}
+          <div className="hidden md:flex items-center space-x-4">
             <a
               href="/contact-us"
-              className="bg-blue-600 rounded text-white py-2 px-4"
+              className="bg-blue-600 hover:bg-blue-700 transition-colors rounded text-white py-2 px-4 text-sm lg:text-base"
             >
               Contact Us
             </a>
             <button
-              onClick={() => setSearchOpen(!searchOpen)}
-              className="text-black"
+              onClick={toggleSearch}
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+              aria-label="Search"
             >
-              <i className="fa fa-search"></i>
+              <Search size={20} />
             </button>
 
             {searchOpen && (
               <div className="relative">
                 <input
                   type="text"
-                  className="absolute right-0 w-48 h-8 border rounded-lg px-2"
+                  className="absolute right-0 w-48 lg:w-64 h-8 border rounded-lg px-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Search..."
+                  autoFocus
                 />
               </div>
             )}
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-2 border-t border-gray-200 pt-4">
+            <ul className="space-y-4">
+              <li>
+                <a href="/Homepage" className="block px-2 py-1">
+                  Home
+                </a>
+              </li>
+
+              <li className="border-b border-gray-100 pb-2">
+                <details className="group">
+                  <summary className="flex items-center justify-between px-2 py-1 cursor-pointer list-none">
+                    About us
+                    <span className="text-gray-500">+</span>
+                  </summary>
+                  <ul className="pl-4 mt-2 space-y-2">
+                    {aboutuspaths.map((item) => (
+                      <li key={item.title}>
+                        <a href={item.href} className="block py-1">
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+
+              <li className="border-b border-gray-100 pb-2">
+                <details className="group">
+                  <summary className="flex items-center justify-between px-2 py-1 cursor-pointer list-none">
+                    Solutions
+                    <span className="text-gray-500">+</span>
+                  </summary>
+                  <ul className="pl-4 mt-2 space-y-2">
+                    {solutionspaths.map((item) => (
+                      <li key={item.title}>
+                        <a href={item.href} className="block py-1">
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+
+              <li className="border-b border-gray-100 pb-2">
+                <a href="/industries" className="block px-2 py-1">
+                  Industries
+                </a>
+              </li>
+
+              <li className="border-b border-gray-100 pb-2">
+                <a href="/career" className="block px-2 py-1">
+                  Career
+                </a>
+              </li>
+
+              <li className="border-b border-gray-100 pb-2">
+                <a href="/blogs" className="block px-2 py-1">
+                  Blog
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contact-us"
+                  className="block bg-blue-600 text-white text-center rounded py-2 px-4 mt-2"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
   );

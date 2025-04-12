@@ -13,74 +13,72 @@ export default function Advisoryservices() {
           <div className="w-full flex-shrink-0 relative">
             <Image
               src="/imgs/img66.png"
-              className="w-full object-cover h-[50vh] sm:h-[40vh] md:h-[45vh] lg:h-[90vh]"
-              alt=""
+              className="w-full object-cover h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh]"
+              alt="Hero image"
               width={2000}
               height={1000}
+              priority
             />
-            <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-start p-10 text-white ">
-              <h1 className="text-xl md:text-5xl lg:text-4xl font-semibold absolute top-[37%] left-1/4 transform -translate-x-1/4">
-                Harnessing decades of <br />
-                expertise to elevate <br />
-                your Customer <br />
-                Experience.
-              </h1>
-              <span className="absolute top-[60%] left-[20%] block w-20 h-1 bg-blue-600 mt-0"></span>
-              <p className="text-xs md:text-xs lg:text-sm absolute top-[62%] left-[25%] transform -translate-x-1/4">
-                Transform your contact center with our integrated Customer{" "}
-                <br />
-                Lifecycle Management Advisory.
-              </p>
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-4 sm:p-8 md:p-10 text-white">
+              <div className="w-full md:w-2/3 lg:w-1/2 pl-2 sm:pl-4 md:pl-16">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold mb-2 sm:mb-4">
+                  Harnessing decades of expertise to elevate your Customer
+                  Experience.
+                </h1>
+                <span className="block w-16 sm:w-20 h-1 bg-blue-600 mb-2 sm:mb-4"></span>
+                <p className="text-xs sm:text-sm md:text-base">
+                  Transform your contact center with our integrated Customer
+                  Lifecycle Management Advisory.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
+
+      {/* Services sections with consistent spacing and responsive behavior */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Streamline, Empower, Excel
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               Transform your customer interactions into enduring relationships
               with Technotask&apos;s comprehensive Customer Lifecycle Management
               services.
             </p>
           </div>
-
-          {/* Right Side Image */}
-          <div className="flex-1">
+          <div className="flex-1 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img6.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img6.png"
+              alt="Streamline services illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
-          <div className="flex-1">
+      {/* Alternating sections with consistent styling */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20 bg-gray-50">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
+          <div className="flex-1 md:order-1 order-2 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img2.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img2.png"
+              alt="Administrative solutions illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+          <div className="flex-1 text-center md:text-left order-1 md:order-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Integrated Administrative Solutions
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               At Technotask, we seamlessly integrate administrative solutions
               into your contact center operations. Our approach streamlines
               tasks such as IT system administration and partner management,
@@ -92,14 +90,13 @@ export default function Advisoryservices() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Human Capital Development Suite
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               Empower your contact center teams with our comprehensive Human
               Capital Development Suite. We provide tailored human resources
               management and robust learning and development programs. Elevate
@@ -108,37 +105,35 @@ export default function Advisoryservices() {
             </p>
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1">
+          <div className="flex-1 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img3.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img3.png"
+              alt="Human capital development illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
-          <div className="flex-1">
+
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20 bg-gray-50">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
+          <div className="flex-1 md:order-1 order-2 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img2.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img2.png"
+              alt="Quality assurance illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+          <div className="flex-1 text-center md:text-left order-1 md:order-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Quality Assurance & Compliance Mastery
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               Quality assurance and compliance are paramount in our advisory
               services. We implement meticulous quality control measures and
               comprehensive compliance frameworks to ensure your operations meet
@@ -149,14 +144,13 @@ export default function Advisoryservices() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Operational Excellence Hub
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               Optimize your contact center operations with our Operational
               Excellence Hub. We offer data-driven insights, process
               improvements, and continuous performance monitoring. Achieve
@@ -164,38 +158,35 @@ export default function Advisoryservices() {
               strategic operational support.
             </p>
           </div>
-
-          {/* Right Side Image */}
-          <div className="flex-1">
+          <div className="flex-1 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img6.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img6.png"
+              alt="Operational excellence illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
-          <div className="flex-1">
+
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20 bg-gray-50">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto w-full gap-6 md:gap-10">
+          <div className="flex-1 md:order-1 order-2 mt-4 md:mt-0 w-full">
             <Image
-              src="/imgs/img2.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
+              src="/imgs/img2.png"
+              alt="Workforce management illustration"
+              width={500}
+              height={500}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+          <div className="flex-1 text-center md:text-left order-1 md:order-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4">
               Optimized Workforce Management
-            </h1>
-            <p className="text-base md:text-xs text-gray-600">
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
               Maximize the efficiency of your workforce with our Workforce
               Management as a Service (WaaS). From optimal scheduling and
               resource allocation to cost management and performance tracking,
@@ -206,16 +197,16 @@ export default function Advisoryservices() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center my-20 px-10 md:px-20">
-        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full gap-10 max-w-screen-md">
-          {/* Left Side Content */}
-          <div className="relative left-[1%]">
-            <div className="max-w-md w-full text-center space-y-8">
-              {/* Heading */}
-              <h1 className="text-4xl font-semibold text-left">
+
+      {/* Why Choose Us section */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-col lg:flex-row items-start max-w-6xl mx-auto w-full gap-6 md:gap-10">
+          <div className="flex-1 w-full">
+            <div className="w-full text-left space-y-4 sm:space-y-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-2">
                 Why Choose Us?
-              </h1>
-              <ul className="space-y-3">
+              </h2>
+              <ul className="space-y-2 sm:space-y-3">
                 {[
                   "Employee Engagement: Initiatives to boost morale and productivity.",
                   "Performance Management: Structured feedback and evaluation systems.",
@@ -224,91 +215,89 @@ export default function Advisoryservices() {
                   "Strategic Planning: Helping businesses define and achieve long-term goals.",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    {/* Small Pink Circle with Check Icon */}
-                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-pink-400 flex-shrink-0 mt-0.5">
-                      <Check className="text-white w-3 h-3" />
+                    <div className="flex items-center justify-center w-4 sm:w-5 h-4 sm:h-5 rounded-full bg-pink-400 flex-shrink-0 mt-0.5">
+                      <Check className="text-white w-2 sm:w-3 h-2 sm:h-3" />
                     </div>
-
-                    {/* Small Text */}
-                    <p className="text-xs text-gray-700 leading-snug">{item}</p>
+                    <p className="text-xs sm:text-sm text-gray-700 leading-snug">
+                      {item}
+                    </p>
                   </li>
                 ))}
               </ul>
-              <div className="flex items-left">
-                <button className="bg-blue-500 p-3 rounded-lg">
-                  Meet Our Core Team {"->"}
+              <div className="pt-2 sm:pt-4">
+                <button className="bg-blue-500 text-white py-2 px-4 sm:py-3 sm:px-6 rounded-lg text-xs sm:text-sm hover:bg-blue-600 transition-colors">
+                  Meet Our Core Team {" →"}
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1">
+          {/* Image */}
+          <div className="flex-1 mt-4 lg:mt-0 w-full">
             <Image
-              src="/imgs/img66.png" // public folder me image place karna
-              alt="Sample Image"
-              width={240}
-              height={240}
-              className="w-full h-[300px] rounded-lg shadow-lg"
+              src="/imgs/img66.png"
+              alt="Team members"
+              width={500}
+              height={500}
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
       </div>
 
-      <div className="relative left-[25%] mt-5 w-full max-w-screen-md">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">
-          Testimonial
-        </h2>
-      </div>
-      <div className="flex justify-center pb-8">
-        <div className="flex justify-center w-full max-w-screen-md">
-          {/* Heading */}
+      {/* Testimonials section */}
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-4 sm:mb-8 text-center md:text-left">
+            Testimonials
+          </h2>
 
-          {/* Cards Container */}
-          <div className="flex gap-2">
-            {/* First Card */}
-            <div className="w-full sm:w-1/3 p-3">
-              <p className="text-sm text-gray-600 mb-4">
-                “First of all, congratulations and thanks to you for all your
+          {/* Responsive testimonial grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {/* First Testimonial */}
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 sm:mb-4">
+                "First of all, congratulations and thanks to you for all your
                 hard work. You are turning the team 360 now. Keep it, this is
                 the beginning only. Onwards and Upwards. I would like to meet
                 the team on MS teams Dear Adil and Rajib, Let us continue to
                 focus on deepening the relationship. Your support to Neha and
-                the team is really appreciated.”
+                the team is really appreciated."
               </p>
-              <div className="text-green-600 font-semibold">
+              <div className="text-green-600 font-semibold text-sm">
                 Subsidiary of a Global MNC bank, UAE (Fintech)
               </div>
               <div className="text-xs text-gray-500">Co-Founder & CEO</div>
             </div>
 
-            {/* Second Card */}
-            <div className="w-full sm:w-1/3 p-3">
-              <p className="text-sm text-gray-600 mb-4">
-                “Your support and efforts have certainly contributed to our
+            {/* Second Testimonial */}
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 sm:mb-4">
+                "Your support and efforts have certainly contributed to our
                 success so far. We still have a long way to go but with your
                 constant endeavors 85% of TNPS & BPO scores do not look like a
-                distant dream”
+                distant dream"
               </p>
-              <div className="text-green-600 font-semibold">JOE</div>
+              <div className="text-green-600 font-semibold text-sm">JOE</div>
               <div className="text-xs text-gray-500">E-Commerce Giant</div>
             </div>
 
-            {/* Third Card */}
-            <div className="w-full sm:w-1/3 p-3">
-              <p className="text-sm text-gray-600 mb-4">
-                “The significant rise in productivity from the operations team
+            {/* Third Testimonial */}
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md sm:col-span-2 lg:col-span-1">
+              <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 sm:mb-4">
+                "The significant rise in productivity from the operations team
                 has been massive which has helped us achieve our targeted
                 answering numbers during the BIG BOLD sale period and ensure the
                 quality of calls are not compromised, we have been able to move
-                from 30% to 78% now and marching towards 85%”
+                from 30% to 78% now and marching towards 85%"
               </p>
-              <div className="text-green-600 font-semibold">Varsha</div>
+              <div className="text-green-600 font-semibold text-sm">Varsha</div>
               <div className="text-xs text-gray-500">E-commerce Giant</div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

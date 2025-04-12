@@ -34,52 +34,60 @@ export default function Blogs() {
     <div>
       <Navbar />
       {/* ....first div */}
-      <div className="relative w-full">
-        <div className="flex transition-transform duration-700 ease-in-out">
-          <div className="w-full flex-shrink-0 relative">
-            <Image
-              src="/imgs/ofc.png"
-              className="w-full object-cover h-[50vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh]"
-              alt=""
-              width={2000}
-              height={1000}
+      <div className="w-full">
+        {/* Hero Section */}
+        <div className="relative w-full">
+          <div className="w-full relative">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1"
+              className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
+              alt="Blog Header"
             />
-            <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-start p-10 text-white">
-              <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold absolute top-1/3 left-1/4 transform -translate-x-1/4 border-b-6 border-blue-600 pb-4">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl  lg:absolute lg:top-[40%] lg:left-[30%] font-semibold text-white mb-4">
                 Blogs
               </h1>
+              <span className="block w-20 h-1 bg-blue-600 lg:absolute lg:top-[56%] lg:left-[31%]"></span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* ...second div */}
-      <div className="min-h-screen flex flex-col items-center px-8 sm:px-12 lg:px-20 pt-10 mt-0">
-        <div className="text-center mb-12">
-          <p className="text-sm text-purple-600 font-semibold">
-            Read what’s New
-          </p>
-          <h1 className="text-4xl font-bold mt-2">Our Blogs</h1>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-1/2 max-w-screen-xl">
-          {blogs.map((blog, index) => (
-            <div key={index} className="bg-white overflow-hidden">
-              <div className="w-full h-30 relative">
-                <Image
-                  src={blog.img}
-                  alt={blog.title}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-white bg-purple-600 inline-block px-3 py-2 rounded-md">
-                  {blog.title}
-                </p>
-              </div>
+        {/* Blog Grid */}
+        <div className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-sm text-purple-600 font-semibold">
+                Read what's New
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold mt-2">Our Blogs</h2>
             </div>
-          ))}
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-30">
+              {blogs.map((blog, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="relative h-48 sm:h-56">
+                    <img
+                      src={blog.img}
+                      alt={blog.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <span className="bg-purple-600 text-white text-sm px-3 py-1 rounded-full">
+                      {blog.title}
+                    </span>
+                    <h3 className="text-xl font-semibold mt-4">{blog.title}</h3>
+                    <button className="mt-4 text-purple-600 font-semibold text-sm hover:text-purple-700">
+                      Read More →
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
