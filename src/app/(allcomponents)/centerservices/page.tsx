@@ -26,7 +26,7 @@ export default function Centerservices() {
               height={1000}
             />
             <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center sm:items-start p-4 sm:p-10 text-white">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center sm:text-left lg:absolute lg:top-[35%] lg:left-[27%] sm:absolute sm:top-[37%] sm:left-1/4 sm:transform sm:-translate-x-1/4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center sm:text-left lg:absolute lg:top-[3%] lg:left-[27%] sm:absolute sm:top-[37%] sm:left-1/4 sm:transform sm:-translate-x-1/4">
                 Contact Center Services
               </h1>
               <span className="block w-16 sm:w-20 h-1 bg-blue-600 mt-2 sm:mt-0 sm:absolute sm:top-1/2 sm:left-[19%]"></span>
@@ -298,12 +298,12 @@ export default function Centerservices() {
               {/* First Card */}
               <div className="w-full sm:w-1/3 p-3 bg-gray-50 rounded-lg">
                 <p className="text-xs sm:text-sm text-gray-600 mb-4">
-                  "First of all, congratulations and thanks to you for all your
-                  hard work. You are turning the team 360 now. Keep it, this is
-                  the beginning only. Onwards and Upwards. I would like to meet
-                  the team on MS teams Dear Adil and Rajib, Let us continue to
-                  focus on deepening the relationship. Your support to Neha and
-                  the team is really appreciated."
+                  &quot;First of all, congratulations and thanks to you for all
+                  your hard work. You are turning the team 360 now. Keep it,
+                  this is the beginning only. Onwards and Upwards. I would like
+                  to meet the team on MS teams Dear Adil and Rajib, Let us
+                  continue to focus on deepening the relationship. Your support
+                  to Neha and the team is really appreciated.&quot;
                 </p>
                 <div className="text-green-600 font-semibold text-sm">
                   Subsidiary of a Global MNC bank, UAE (Fintech)
@@ -314,10 +314,10 @@ export default function Centerservices() {
               {/* Second Card */}
               <div className="w-full sm:w-1/3 p-3 bg-gray-50 rounded-lg">
                 <p className="text-xs sm:text-sm text-gray-600 mb-4">
-                  "Your support and efforts have certainly contributed to our
-                  success so far. We still have a long way to go but with your
-                  constant endeavors 85% of TNPS & BPO scores do not look like a
-                  distant dream"
+                  &quot;Your support and efforts have certainly contributed to
+                  our success so far. We still have a long way to go but with
+                  your constant endeavors 85% of TNPS & BPO scores do not look
+                  like a distant dream&quot;
                 </p>
                 <div className="text-green-600 font-semibold text-sm">JOE</div>
                 <div className="text-xs text-gray-500">E-Commerce Giant</div>
@@ -326,11 +326,11 @@ export default function Centerservices() {
               {/* Third Card */}
               <div className="w-full sm:w-1/3 p-3 bg-gray-50 rounded-lg">
                 <p className="text-xs sm:text-sm text-gray-600 mb-4">
-                  "The significant rise in productivity from the operations team
-                  has been massive which has helped us achieve our targeted
+                  &quot;The significant rise in productivity from the operations
+                  team has been massive which has helped us achieve our targeted
                   answering numbers during the BIG BOLD sale period and ensure
                   the quality of calls are not compromised, we have been able to
-                  move from 30% to 78% now and marching towards 85%"
+                  move from 30% to 78% now and marching towards 85%&quot;
                 </p>
                 <div className="text-green-600 font-semibold text-sm">
                   Varsha

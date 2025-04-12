@@ -2,15 +2,6 @@ import React from "react";
 import Image from "../../../../node_modules/next/image";
 import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
-import { CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   "/imgs/place1.png",
@@ -43,7 +34,7 @@ export default function Aiproducts() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Events"
@@ -79,14 +70,13 @@ export default function Aiproducts() {
             </div>
           </div>
         </div>
-
         {/* Event Gallery */}
         <div className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {images.map((src, index) => (
                 <div key={index} className="relative aspect-square">
-                  <img
+                  <Image
                     src={src}
                     alt={`Event ${index + 1}`}
                     className="w-full h-full object-cover rounded-xl"

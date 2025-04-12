@@ -18,7 +18,7 @@ export default function Egovernance() {
         <div className="relative w-full">
           <div className="flex">
             <div className="w-full flex-shrink-0 relative">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
                 className="w-full object-cover h-[50vh] md:h-[60vh] lg:h-[80vh]"
                 alt="Office building"
@@ -56,7 +56,7 @@ export default function Egovernance() {
                 </p>
               </div>
               <div className="flex justify-center md:justify-end">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   alt="Business analytics"
                   className="rounded-lg shadow-xl w-full max-w-md"
@@ -172,7 +172,7 @@ export default function Egovernance() {
                 </Accordion>
               </div>
               <div className="flex justify-center md:justify-end">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   alt="Business team"
                   className="rounded-lg shadow-xl w-full max-w-md"
@@ -187,7 +187,7 @@ export default function Egovernance() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="flex justify-center md:justify-start">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   alt="Contact us"
                   className="rounded-lg shadow-xl w-full max-w-md"
@@ -199,10 +199,10 @@ export default function Egovernance() {
                 </h2>
                 <p className="text-gray-600 mb-4">
                   Join hands with Technotask to embark on a transformative
-                  journey in E-Governance. Whether you're looking to enhance
-                  service delivery, streamline operations, or improve citizen
-                  engagement, we have the expertise and dedication to make it
-                  happen.
+                  journey in E-Governance. Whether you&apos;re looking to
+                  enhance service delivery, streamline operations, or improve
+                  citizen engagement, we have the expertise and dedication to
+                  make it happen.
                 </p>
                 <p className="text-gray-600 mb-8">
                   Contact us today to explore how our tailored E-Governance

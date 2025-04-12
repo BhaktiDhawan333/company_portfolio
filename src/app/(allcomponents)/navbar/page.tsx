@@ -9,6 +9,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Menu, X, Search } from "lucide-react";
+import Link from "../../../../node_modules/next/link";
 
 const aboutuspaths: { title: string; href: string }[] = [
   {
@@ -78,9 +79,9 @@ export default function Navbar() {
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="text-blue-600 font-bold text-2xl md:text-3xl">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               Logo
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -184,12 +185,12 @@ export default function Navbar() {
 
           {/* Desktop CTA and Search */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
+            <Link
               href="/contact-us"
               className="bg-blue-600 hover:bg-blue-700 transition-colors rounded text-white py-2 px-4 text-sm lg:text-base"
             >
               Contact Us
-            </a>
+            </Link>
             <button
               onClick={toggleSearch}
               className="text-gray-700 hover:text-blue-600 transition-colors"
@@ -216,9 +217,9 @@ export default function Navbar() {
           <div className="md:hidden mt-4 pb-2 border-t border-gray-200 pt-4">
             <ul className="space-y-4">
               <li>
-                <a href="/Homepage" className="block px-2 py-1">
+                <Link href="/Homepage" className="block px-2 py-1">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="border-b border-gray-100 pb-2">
@@ -230,9 +231,9 @@ export default function Navbar() {
                   <ul className="pl-4 mt-2 space-y-2">
                     {aboutuspaths.map((item) => (
                       <li key={item.title}>
-                        <a href={item.href} className="block py-1">
+                        <Link href={item.href} className="block py-1">
                           {item.title}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -248,9 +249,9 @@ export default function Navbar() {
                   <ul className="pl-4 mt-2 space-y-2">
                     {solutionspaths.map((item) => (
                       <li key={item.title}>
-                        <a href={item.href} className="block py-1">
+                        <Link href={item.href} className="block py-1">
                           {item.title}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -258,30 +259,30 @@ export default function Navbar() {
               </li>
 
               <li className="border-b border-gray-100 pb-2">
-                <a href="/industries" className="block px-2 py-1">
+                <Link href="/industries" className="block px-2 py-1">
                   Industries
-                </a>
+                </Link>
               </li>
 
               <li className="border-b border-gray-100 pb-2">
-                <a href="/career" className="block px-2 py-1">
+                <Link href="/career" className="block px-2 py-1">
                   Career
-                </a>
+                </Link>
               </li>
 
               <li className="border-b border-gray-100 pb-2">
-                <a href="/blogs" className="block px-2 py-1">
+                <Link href="/blogs" className="block px-2 py-1">
                   Blog
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/contact-us"
                   className="block bg-blue-600 text-white text-center rounded py-2 px-4 mt-2"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

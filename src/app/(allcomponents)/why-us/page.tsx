@@ -5,12 +5,11 @@ import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 // import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Whyus() {
   const [isOpen, setIsOpen] = useState(true);
-  const [isOpenSecond, setIsOpenSecond] = useState(true);
   const [startIndex, setStartIndex] = useState(0);
 
   const slideLeft = () => {
@@ -84,7 +83,7 @@ export default function Whyus() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Office Team"
@@ -99,7 +98,7 @@ export default function Whyus() {
                 </h1>
                 <span className="block w-20 h-1 bg-blue-600 mb-4"></span>
                 <p className="text-white text-sm sm:text-base max-w-xl">
-                  We're a next-gen contact center committed to delivering
+                  We&apos;re a next-gen contact center committed to delivering
                   personalized CX to our global clients with our diverse
                   workforce, and tech innovations at scale.
                 </p>
@@ -129,7 +128,7 @@ export default function Whyus() {
                 </button>
               </div>
               <div>
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1"
                   alt="Overview"
                   className="rounded-lg shadow-xl"
@@ -144,7 +143,7 @@ export default function Whyus() {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1"
                   alt="Mission"
                   className="rounded-lg shadow-xl"

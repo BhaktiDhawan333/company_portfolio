@@ -25,7 +25,7 @@ export default function Ourpresence() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Global Presence"
@@ -54,7 +54,7 @@ export default function Ourpresence() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1589519160732-57fc498494f8?ixlib=rb-1.2.1"
                 alt="World Map"
                 className="w-full rounded-xl shadow-lg"
@@ -73,7 +73,7 @@ export default function Ourpresence() {
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <div className="relative h-48 sm:h-64">
-                    <img
+                    <Image
                       src={place.src}
                       alt={place.name}
                       className="w-full h-full object-cover"

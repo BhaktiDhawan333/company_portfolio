@@ -19,7 +19,7 @@ export default function Aiproducts() {
         <div className="relative w-full">
           <div className="flex">
             <div className="w-full flex-shrink-0 relative">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3"
                 className="w-full h-[50vh] sm:h-[40vh] md:h-[45vh] lg:h-[80vh] object-cover"
                 alt="AI Technology"
@@ -48,7 +48,7 @@ export default function Aiproducts() {
               </p>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3"
                 alt="AI Innovation"
                 className="rounded-lg shadow-xl w-full max-w-md"
@@ -62,7 +62,7 @@ export default function Aiproducts() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="flex justify-center md:justify-start">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3"
                   alt="AI Technology"
                   className="rounded-lg shadow-xl w-full max-w-md"

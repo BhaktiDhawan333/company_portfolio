@@ -3,16 +3,6 @@ import Image from "../../../../node_modules/next/image";
 import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
 
-const images = [
-  { image: "/imgs/iso1.png", title: "Nasscom" },
-  { image: "/imgs/iso2.png", title: "GeM Gocernment" },
-  { image: "/imgs/iso1.png", title: "GeM Gocernment" },
-  { image: "/imgs/iso2.png", title: "Nasscom" },
-  { image: "/imgs/iso5.png", title: "GeM Gocernment" },
-  { image: "/imgs/iso6.png", title: "12344" },
-  { image: "/imgs/iso7.png", title: "Nasscom" },
-  { image: "/imgs/iso1.png", title: "12344" },
-];
 const certifications = [
   {
     title: "ISO 9001:2015",
@@ -44,7 +34,7 @@ export default function Certifications() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Certifications"
@@ -65,7 +55,7 @@ export default function Certifications() {
               {certifications.map((cert, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative w-full aspect-square mb-4">
-                    <img
+                    <Image
                       src={cert.image}
                       alt={cert.title}
                       className="w-full h-full object-cover rounded-xl shadow-lg"

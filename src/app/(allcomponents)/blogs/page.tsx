@@ -38,7 +38,7 @@ export default function Blogs() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Blog Header"
@@ -57,7 +57,7 @@ export default function Blogs() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <p className="text-sm text-purple-600 font-semibold">
-                Read what's New
+                Read what&apos;s New
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold mt-2">Our Blogs</h2>
             </div>
@@ -69,7 +69,7 @@ export default function Blogs() {
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <div className="relative h-48 sm:h-56">
-                    <img
+                    <Image
                       src={blog.img}
                       alt={blog.title}
                       className="w-full h-full object-cover"

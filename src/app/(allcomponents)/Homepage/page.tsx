@@ -506,7 +506,7 @@ export default function Homepage() {
         {/* Heading */}
         <div className="text-center mb-6">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-            We're committed to <br className="hidden sm:block" />
+            We&apos;re committed to <br className="hidden sm:block" />
             Excellence
           </h2>
           <p className="text-xs sm:text-sm text-gray-500 mt-2 max-w-2xl mx-auto">
@@ -560,12 +560,12 @@ export default function Homepage() {
             {/* First Card */}
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
               <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                "First of all, congratulations and thanks to you for all your
-                hard work. You are turning the team 360 now. Keep it, this is
-                the beginning only. Onwards and Upwards. I would like to meet
+                &quot;First of all, congratulations and thanks to you for all
+                your hard work. You are turning the team 360 now. Keep it, this
+                is the beginning only. Onwards and Upwards. I would like to meet
                 the team on MS teams Dear Adil and Rajib, Let us continue to
                 focus on deepening the relationship. Your support to Neha and
-                the team is really appreciated."
+                the team is really appreciated.&quot;
               </p>
               <div className="text-green-600 font-semibold text-sm">
                 Subsidiary of a Global MNC bank, UAE (Fintech)
@@ -576,10 +576,10 @@ export default function Homepage() {
             {/* Second Card */}
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
               <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                "Your support and efforts have certainly contributed to our
+                &quot;Your support and efforts have certainly contributed to our
                 success so far. We still have a long way to go but with your
                 constant endeavors 85% of TNPS & BPO scores do not look like a
-                distant dream"
+                distant dream&quot;
               </p>
               <div className="text-green-600 font-semibold text-sm">JOE</div>
               <div className="text-xs text-gray-500">E-Commerce Giant</div>
@@ -588,11 +588,11 @@ export default function Homepage() {
             {/* Third Card */}
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md sm:col-span-2 lg:col-span-1">
               <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                "The significant rise in productivity from the operations team
-                has been massive which has helped us achieve our targeted
+                &quot;The significant rise in productivity from the operations
+                team has been massive which has helped us achieve our targeted
                 answering numbers during the BIG BOLD sale period and ensure the
                 quality of calls are not compromised, we have been able to move
-                from 30% to 78% now and marching towards 85%"
+                from 30% to 78% now and marching towards 85%&quot;
               </p>
               <div className="text-green-600 font-semibold text-sm">Varsha</div>
               <div className="text-xs text-gray-500">E-commerce Giant</div>

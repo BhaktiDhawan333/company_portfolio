@@ -2,12 +2,6 @@ import React from "react";
 import Image from "../../../../node_modules/next/image";
 import { Footer } from "../../../defaultpage/footer/page";
 import Navbar from "../navbar/page";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Check } from "lucide-react";
 
 export default function Justtawk() {
@@ -19,7 +13,7 @@ export default function Justtawk() {
         <div className="relative w-full">
           <div className="flex">
             <div className="w-full flex-shrink-0 relative">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1"
                 className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
                 alt="Call Center"
@@ -51,14 +45,14 @@ export default function Justtawk() {
               </h2>
               <p className="text-gray-600">
                 Empower your business with seamless customer communication
-                through Justtawk's comprehensive contact center solutions.
-                Whether you're a small startup or a thriving enterprise,
+                through Justtawk&apos;s comprehensive contact center solutions.
+                Whether you&apos;re a small startup or a thriving enterprise,
                 Justtawk ensures your customers are always heard, offering
                 cost-effective plans starting at just ₹8999 per month.
               </p>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1"
                 alt="Setup Process"
                 className="rounded-lg shadow-xl w-full max-w-md"
@@ -72,7 +66,7 @@ export default function Justtawk() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="flex justify-center md:justify-start">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1"
                   alt="Services"
                   className="rounded-lg shadow-xl w-full max-w-md"
@@ -134,7 +128,7 @@ export default function Justtawk() {
               </ul>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1"
                 alt="Why Choose Us"
                 className="rounded-lg shadow-xl w-full max-w-md"
@@ -146,7 +140,7 @@ export default function Justtawk() {
         {/* CTA Section */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="relative rounded-3xl overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1"
               alt="CTA Background"
               className="absolute inset-0 w-full h-full object-cover"
@@ -157,9 +151,9 @@ export default function Justtawk() {
                   Get Started Today
                 </h2>
                 <p className="text-white/90 mb-8">
-                  Transform your customer interactions with Justtawk's agile
-                  contact center solutions. Enhance customer satisfaction and
-                  streamline operations effortlessly.
+                  Transform your customer interactions with Justtawk&apos;s
+                  agile contact center solutions. Enhance customer satisfaction
+                  and streamline operations effortlessly.
                 </p>
                 <button className="bg-white text-blue-600 px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors">
                   Set Up Your Contact Center

@@ -11,7 +11,7 @@ export default function Ourclients() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Our Clients"
@@ -33,8 +33,8 @@ export default function Ourclients() {
                 Trusted by Industry Leaders
               </h2>
               <p className="mt-4 text-gray-600">
-                We're proud to work with some of the most innovative companies
-                across the globe
+                We&apos;re proud to work with some of the most innovative
+                companies across the globe
               </p>
             </div>
 

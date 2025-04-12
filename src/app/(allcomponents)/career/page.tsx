@@ -22,7 +22,7 @@ export default function Blogs() {
         {/* Hero Section */}
         <div className="relative w-full">
           <div className="w-full relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1"
               className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover"
               alt="Office"
@@ -32,8 +32,8 @@ export default function Blogs() {
                 Career
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-white text-center max-w-2xl">
-                "We are always searching for new talent, Bringing the best
-                opportunities to grow in life"
+                &quot;We are always searching for new talent, Bringing the best
+                opportunities to grow in life&quot;
               </p>
               <span className="block w-20 h-1 bg-blue-600 mt-4"></span>
             </div>

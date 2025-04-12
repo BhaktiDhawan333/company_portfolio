@@ -83,7 +83,7 @@ export default function Industries() {
         <div className="relative w-full">
           <div className="flex">
             <div className="w-full flex-shrink-0 relative">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1"
                 className="w-full object-cover h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]"
                 alt="Business sectors"
